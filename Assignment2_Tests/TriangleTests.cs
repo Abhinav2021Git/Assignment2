@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace Assignment2_Tests
 {
     [TestFixture]
-    public class UnitTest1
+    public class TriangleTests
     {
         /* To verify whether an Equilateral triangle can be formed if all three sides(i.e., 3, 3, and 3) are equal  */
         [Test]
