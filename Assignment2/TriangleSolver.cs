@@ -9,6 +9,7 @@ namespace Assignment2
 
         public static string Analyze(int a, int b, int c)
         {
+            //2nd Way to check whether triangle can be formed or not?
             /* if (a >= (b + c) || b >= (a + c)   || c >= (a + b))
              {
                  string NoTriangle = "Based on your input values, no triangle can be formed\n";
@@ -17,7 +18,7 @@ namespace Assignment2
             if (a < (b + c) && b < (c + a) && c < (a + b))
             {
                 Console.WriteLine("The Triangle can be formed\n");
-             if (a == b && b == c)
+                if (a == b && b == c)
                 {
                     string EquilateralTriangle = "This is an Equilateral Triangle because all 3 sides are equal\n";
                     return EquilateralTriangle;
@@ -33,15 +34,9 @@ namespace Assignment2
                     return IsoscelesTriangle;
                 }
             }
-            else
-            {
-                string NoTriangle = "Based on your input values, no triangle can be formed\n";
-                return NoTriangle;
-            }
+            return "Based on your input values, no triangle can be formed\n";
 
-            return "Invalid Input";
         }
-
     }
 }
 
